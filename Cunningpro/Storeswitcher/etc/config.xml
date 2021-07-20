@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+* Cunningpro Creative
+*
+* Cunningpro Creative serves customers all at one place who
+searches for different types of extensions and themes for
+popular eCommerce Platforms such as Shopify, Magento,
+Shopware, and BigCommerce.
+*
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade this
+extension to newer
+* version in the future.
+*
+* @category
+Cunningpro Creative
+* @package
+Cunningpro_Storeswitcher
+* @copyright
+Copyright (c) Cunningpro Creative
+(https://cunningpro.com/)
+* See COPYING.txt for license details.*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<cunningpro>
+			<general>
+				<enable>1</enable>
+			</general>
+			<storefront>
+				<enables>1</enables>
+			</storefront>
+			<genral>
+				<buttons></buttons>
+				<buttom></buttom>
+				<buttont></buttont>
+			</genral>		
+		</cunningpro>
+	</default>
+</config>
