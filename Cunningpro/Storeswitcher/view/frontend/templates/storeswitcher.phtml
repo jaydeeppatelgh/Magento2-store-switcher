@@ -1,19 +1,21 @@
 <?php if($block->getModule() == 1){ ?>
-	<?php if ($block->autodirect() != 1){ ?>
-		<div class="callfor-popup">
-			<?php echo $block->getstore(); ?>
+	<?php if ($block->autoDirect() != 1){ ?>
+	    <div class="callfor-popup">
+		<?php echo $block->getPopupContent(); ?>
+
 		</div>
 	<?php } ?>
 	<script type="text/javascript">
-		window.redirect = "<?php echo $block->autodirect();?>";
+        window.redirect = "<?php echo $block->autoDirect();?>";
 		window.enable = "<?php echo $block->getModule();?>";
 		window.url = "<?php echo $block->getStoreInfo();?>";
-		window.yesbutton = "<?php echo $block->storebtn();?>";
-		window.nobutton = "<?php echo $block->storebt();?>";
+		window.yesbutton = "<?php echo $block->getYesBtn();?>";
+		window.nobutton = "<?php echo $block->getNoBtn();?>";
+
 	</script>
 	<script type="text/javascript">
-		require(['jquery', 'storeswitcher'], function($, storeswitcher) {
-			storeswitcher();
+	    require(['jquery', 'storeswitcher'], function($, storeswitcher) {
+		storeswitcher();
 		});
 	</script>
 <?php } ?>
